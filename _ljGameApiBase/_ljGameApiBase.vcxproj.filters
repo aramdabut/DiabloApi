@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="07.A%2a">
+      <UniqueIdentifier>{80c781e5-13c9-4de0-9d74-b7f8815b67d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Win">
+      <UniqueIdentifier>{aab9971b-a404-49b0-940f-d953b578818b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Base">
+      <UniqueIdentifier>{60d35148-2463-419b-8910-3ee9e37e2ce6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Scene">
+      <UniqueIdentifier>{f76a1392-6316-4869-8ba1-7231d90ccca8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06.Image">
+      <UniqueIdentifier>{21c94b6c-7396-4b96-a88b-ec36fe98b16c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.Actor">
+      <UniqueIdentifier>{cc598e84-31a4-4ca8-86cc-25b619ba5f10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.File">
+      <UniqueIdentifier>{cdf2cdd4-19f5-4b19-b2e4-fe8d0d164e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Base\.h">
+      <UniqueIdentifier>{e11a7f3f-80b3-48db-82eb-3dd00f3cd62d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_ljMapPathFind.h">
+      <Filter>07.A%2a</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameActor.h">
+      <Filter>05.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameActorSub.h">
+      <Filter>05.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameAniRenderer.h">
+      <Filter>05.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameCollider.h">
+      <Filter>05.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameTexture.h">
+      <Filter>06.Image</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameTextureMgr.h">
+      <Filter>06.Image</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameDir.h">
+      <Filter>03.File</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameFile.h">
+      <Filter>03.File</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGamePath.h">
+      <Filter>03.File</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGamePathMgr.h">
+      <Filter>03.File</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameScene.h">
+      <Filter>04.Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameWin.h">
+      <Filter>01.Win</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameBaseUpdater.h">
+      <Filter>05.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameDebug.h">
+      <Filter>02.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameInput.h">
+      <Filter>02.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameMath.h">
+      <Filter>02.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameRandomNum.h">
+      <Filter>02.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameSound.h">
+      <Filter>02.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameTime.h">
+      <Filter>02.Base</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameRenderer.h">
+      <Filter>05.Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameImage.h">
+      <Filter>06.Image</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameGraphics.h">
+      <Filter>02.Base\.h</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameMacro.h">
+      <Filter>02.Base\.h</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_ljGameActor.cpp">
+      <Filter>05.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameActorSub.cpp">
+      <Filter>05.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameAniRenderer.cpp">
+      <Filter>05.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameCollider.cpp">
+      <Filter>05.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameTexture.cpp">
+      <Filter>06.Image</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameTextureMgr.cpp">
+      <Filter>06.Image</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameDir.cpp">
+      <Filter>03.File</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameFile.cpp">
+      <Filter>03.File</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGamePath.cpp">
+      <Filter>03.File</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGamePathMgr.cpp">
+      <Filter>03.File</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameScene.cpp">
+      <Filter>04.Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameWin.cpp">
+      <Filter>01.Win</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameBaseUpdater.cpp">
+      <Filter>05.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameDebug.cpp">
+      <Filter>02.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameInput.cpp">
+      <Filter>02.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameMath.cpp">
+      <Filter>02.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameRandomNum.cpp">
+      <Filter>02.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameSound.cpp">
+      <Filter>02.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameTime.cpp">
+      <Filter>02.Base</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameRenderer.cpp">
+      <Filter>05.Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameImage.cpp">
+      <Filter>06.Image</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

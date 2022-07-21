@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7595209a-604d-400e-9b63-913bbb547116}</ProjectGuid>
+    <RootNamespace>ljGameApiDiablo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\bin\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\_ljGameApiBase\;..\_ljGameApiBase\ThirdParty\FMOD\inc\;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\bin\;..\_ljGameApiBase\ThirdParty\FMOD\lib\x64\;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\bin\</OutDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\_ljGameApiBase\;..\_ljGameApiBase\ThirdParty\FMOD\inc\;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);..\bin\;..\_ljGameApiBase\ThirdParty\FMOD\lib\x64\;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="_ljBat.h" />
+    <ClInclude Include="_ljBullet.h" />
+    <ClInclude Include="_ljButcher.h" />
+    <ClInclude Include="_ljCharacterSelect.h" />
+    <ClInclude Include="_ljChest.h" />
+    <ClInclude Include="_ljClient.h" />
+    <ClInclude Include="_ljColMap.h" />
+    <ClInclude Include="_ljColTile.h" />
+    <ClInclude Include="_ljCursor.h" />
+    <ClInclude Include="_ljDemoBlizzard.h" />
+    <ClInclude Include="_ljDemoDiablo.h" />
+    <ClInclude Include="_ljDungeon15.h" />
+    <ClInclude Include="_ljDungeon18.h" />
+    <ClInclude Include="_ljDungeon2.h" />
+    <ClInclude Include="_ljEnding.h" />
+    <ClInclude Include="_ljFade.h" />
+    <ClInclude Include="_ljFallen.h" />
+    <ClInclude Include="_ljFallen2.h" />
+    <ClInclude Include="_ljFog.h" />
+    <ClInclude Include="_ljFont.h" />
+    <ClInclude Include="_ljGameManager.h" />
+    <ClInclude Include="_ljGoatMan.h" />
+    <ClInclude Include="_ljInvenBack.h" />
+    <ClInclude Include="_ljInventory.h" />
+    <ClInclude Include="_ljItem.h" />
+    <ClInclude Include="_ljItemMgr.h" />
+    <ClInclude Include="_ljLevel.h" />
+    <ClInclude Include="_ljLogo.h" />
+    <ClInclude Include="_ljMapTester.h" />
+    <ClInclude Include="_ljMonster.h" />
+    <ClInclude Include="_ljMonsterMgr.h" />
+    <ClInclude Include="_ljObject.h" />
+    <ClInclude Include="_ljPlayer.h" />
+    <ClInclude Include="_ljRandomMap.h" />
+    <ClInclude Include="_ljRoom.h" />
+    <ClInclude Include="_ljScavenger.h" />
+    <ClInclude Include="_ljSkeleton.h" />
+    <ClInclude Include="_ljSkeleton2.h" />
+    <ClInclude Include="_ljStageMgr.h" />
+    <ClInclude Include="_ljStat.h" />
+    <ClInclude Include="_ljTestPlayerScene.h" />
+    <ClInclude Include="_ljTestScene.h" />
+    <ClInclude Include="_ljTile.h" />
+    <ClInclude Include="_ljTitle.h" />
+    <ClInclude Include="_ljTitleBlizzard.h" />
+    <ClInclude Include="_ljTitleDiablo.h" />
+    <ClInclude Include="_ljValueData.h" />
+    <ClInclude Include="_ljYFont.h" />
+    <ClInclude Include="_ljZombie.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_ljBat.cpp" />
+    <ClCompile Include="_ljBullet.cpp" />
+    <ClCompile Include="_ljButcher.cpp" />
+    <ClCompile Include="_ljCharacterSelect.cpp" />
+    <ClCompile Include="_ljChest.cpp" />
+    <ClCompile Include="_ljClient.cpp" />
+    <ClCompile Include="_ljColMap.cpp" />
+    <ClCompile Include="_ljColTile.cpp" />
+    <ClCompile Include="_ljCursor.cpp" />
+    <ClCompile Include="_ljDemoBlizzard.cpp" />
+    <ClCompile Include="_ljDemoDiablo.cpp" />
+    <ClCompile Include="_ljDungeon15.cpp" />
+    <ClCompile Include="_ljDungeon18.cpp" />
+    <ClCompile Include="_ljDungeon2.cpp" />
+    <ClCompile Include="_ljEnding.cpp" />
+    <ClCompile Include="_ljFade.cpp" />
+    <ClCompile Include="_ljFallen.cpp" />
+    <ClCompile Include="_ljFallen2.cpp" />
+    <ClCompile Include="_ljFog.cpp" />
+    <ClCompile Include="_ljFont.cpp" />
+    <ClCompile Include="_ljGameManager.cpp" />
+    <ClCompile Include="_ljGoatMan.cpp" />
+    <ClCompile Include="_ljInvenBack.cpp" />
+    <ClCompile Include="_ljInventory.cpp" />
+    <ClCompile Include="_ljItem.cpp" />
+    <ClCompile Include="_ljItemMgr.cpp" />
+    <ClCompile Include="_ljLevel.cpp" />
+    <ClCompile Include="_ljLogo.cpp" />
+    <ClCompile Include="_ljMainFile.cpp" />
+    <ClCompile Include="_ljMapTester.cpp" />
+    <ClCompile Include="_ljMonster.cpp" />
+    <ClCompile Include="_ljMonsterMgr.cpp" />
+    <ClCompile Include="_ljObject.cpp" />
+    <ClCompile Include="_ljPlayer.cpp" />
+    <ClCompile Include="_ljRandomMap.cpp" />
+    <ClCompile Include="_ljRoom.cpp" />
+    <ClCompile Include="_ljScavenger.cpp" />
+    <ClCompile Include="_ljSkeleton.cpp" />
+    <ClCompile Include="_ljSkeleton2.cpp" />
+    <ClCompile Include="_ljStageMgr.cpp" />
+    <ClCompile Include="_ljStat.cpp" />
+    <ClCompile Include="_ljTestPlayerScene.cpp" />
+    <ClCompile Include="_ljTestScene.cpp" />
+    <ClCompile Include="_ljTile.cpp" />
+    <ClCompile Include="_ljTitle.cpp" />
+    <ClCompile Include="_ljTitleBlizzard.cpp" />
+    <ClCompile Include="_ljTitleDiablo.cpp" />
+    <ClCompile Include="_ljValueData.cpp" />
+    <ClCompile Include="_ljYFont.cpp" />
+    <ClCompile Include="_ljZombie.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

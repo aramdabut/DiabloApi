@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="01.Main">
+      <UniqueIdentifier>{f272d2b9-81b1-4dfc-bc77-e5c453f6fbba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene">
+      <UniqueIdentifier>{c07c2bc8-ed87-46f1-b48d-690056a101c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor">
+      <UniqueIdentifier>{3f396a7b-d4e7-4fd4-80af-4fd578d60a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05.UI">
+      <UniqueIdentifier>{f5931ba8-b801-418c-8da8-ecc1f3d15d5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.Obj">
+      <UniqueIdentifier>{40aa828f-273a-4cb2-b21a-2eb2bd605b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Item">
+      <UniqueIdentifier>{0ac74813-9d95-4b93-aa65-ebf159664b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Mon">
+      <UniqueIdentifier>{2ad25bc2-5fd4-4085-b947-930f43e7c988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Tile">
+      <UniqueIdentifier>{895f7514-d7bd-437e-95cd-976145373633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Tile\Map">
+      <UniqueIdentifier>{01a07ec2-44de-4fbb-961e-93cbeda0ffe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Tile\Title">
+      <UniqueIdentifier>{318b7b48-a752-4278-b6b7-15af0e53323e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Bull">
+      <UniqueIdentifier>{e1ea6d81-4158-4520-b729-85ae3f00e18d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04.Data">
+      <UniqueIdentifier>{6b2cc05e-8cab-4f4f-9627-791c62fa29b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Other">
+      <UniqueIdentifier>{595ed7df-bc73-4aca-8693-2f87cdc2be0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03.Actor\Player">
+      <UniqueIdentifier>{ba3c9753-ee7b-4644-8fea-151d9022dcdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\00.TITLE">
+      <UniqueIdentifier>{7e3fadef-61fb-490b-bbb7-d5c4806d00b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\01.SELECT">
+      <UniqueIdentifier>{5a9a5c5d-6de1-4213-8179-5574bde5a6c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\02.DEMO">
+      <UniqueIdentifier>{f21614df-b8c0-4213-8ac3-718b43bd9703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\03.DUNGEON">
+      <UniqueIdentifier>{34cc4c7d-a4b7-4741-9ce0-d799f492c10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Scene\04.ENDING">
+      <UniqueIdentifier>{03d715ea-3316-41da-ad8b-5c166c54bdcc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_ljMainFile.cpp">
+      <Filter>01.Main</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljClient.cpp">
+      <Filter>01.Main</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljDemoBlizzard.cpp">
+      <Filter>02.Scene\02.DEMO</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljDemoDiablo.cpp">
+      <Filter>02.Scene\02.DEMO</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljDungeon2.cpp">
+      <Filter>02.Scene\03.DUNGEON</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljDungeon15.cpp">
+      <Filter>02.Scene\03.DUNGEON</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljDungeon18.cpp">
+      <Filter>02.Scene\03.DUNGEON</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljCursor.cpp">
+      <Filter>05.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljValueData.cpp">
+      <Filter>04.Data</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljObject.cpp">
+      <Filter>00.Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljRandomMap.cpp">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljTile.cpp">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljColMap.cpp">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljRoom.cpp">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljItem.cpp">
+      <Filter>03.Actor\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljItemMgr.cpp">
+      <Filter>03.Actor\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljTitleBlizzard.cpp">
+      <Filter>03.Actor\Tile\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljTitleDiablo.cpp">
+      <Filter>03.Actor\Tile\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljBat.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljButcher.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljFallen.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljFallen2.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGoatMan.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljMonster.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljMonsterMgr.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljBullet.cpp">
+      <Filter>03.Actor\Bull</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljScavenger.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljSkeleton.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljSkeleton2.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljZombie.cpp">
+      <Filter>03.Actor\Mon</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljFade.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljFog.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljFont.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljInvenBack.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljLevel.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljStat.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljYFont.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljPlayer.cpp">
+      <Filter>03.Actor\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljColTile.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljLogo.cpp">
+      <Filter>03.Actor\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljTitle.cpp">
+      <Filter>02.Scene\00.TITLE</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljCharacterSelect.cpp">
+      <Filter>02.Scene\01.SELECT</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljEnding.cpp">
+      <Filter>02.Scene\04.ENDING</Filter>
+    </ClCompile>
+    <ClCompile Include="_ljGameManager.cpp" />
+    <ClCompile Include="_ljInventory.cpp" />
+    <ClCompile Include="_ljChest.cpp" />
+    <ClCompile Include="_ljStageMgr.cpp" />
+    <ClCompile Include="_ljTestPlayerScene.cpp" />
+    <ClCompile Include="_ljTestScene.cpp" />
+    <ClCompile Include="_ljMapTester.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_ljClient.h">
+      <Filter>01.Main</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljDemoBlizzard.h">
+      <Filter>02.Scene\02.DEMO</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljDemoDiablo.h">
+      <Filter>02.Scene\02.DEMO</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljDungeon2.h">
+      <Filter>02.Scene\03.DUNGEON</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljDungeon15.h">
+      <Filter>02.Scene\03.DUNGEON</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljDungeon18.h">
+      <Filter>02.Scene\03.DUNGEON</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljCursor.h">
+      <Filter>05.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljValueData.h">
+      <Filter>04.Data</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljObject.h">
+      <Filter>00.Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljRandomMap.h">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljTile.h">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljColMap.h">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljRoom.h">
+      <Filter>03.Actor\Tile\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljItem.h">
+      <Filter>03.Actor\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljItemMgr.h">
+      <Filter>03.Actor\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljTitleBlizzard.h">
+      <Filter>03.Actor\Tile\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljTitleDiablo.h">
+      <Filter>03.Actor\Tile\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljBat.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljButcher.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljFallen.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljFallen2.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGoatMan.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljMonsterMgr.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljMonster.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljBullet.h">
+      <Filter>03.Actor\Bull</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljScavenger.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljSkeleton.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljSkeleton2.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljZombie.h">
+      <Filter>03.Actor\Mon</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljFade.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljFog.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljFont.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljInvenBack.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljLevel.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljStat.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljYFont.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljPlayer.h">
+      <Filter>03.Actor\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljColTile.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljLogo.h">
+      <Filter>03.Actor\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljTitle.h">
+      <Filter>02.Scene\00.TITLE</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljCharacterSelect.h">
+      <Filter>02.Scene\01.SELECT</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljEnding.h">
+      <Filter>02.Scene\04.ENDING</Filter>
+    </ClInclude>
+    <ClInclude Include="_ljGameManager.h" />
+    <ClInclude Include="_ljInventory.h" />
+    <ClInclude Include="_ljChest.h" />
+    <ClInclude Include="_ljStageMgr.h" />
+    <ClInclude Include="_ljTestPlayerScene.h" />
+    <ClInclude Include="_ljTestScene.h" />
+    <ClInclude Include="_ljMapTester.h" />
+  </ItemGroup>
+</Project>
