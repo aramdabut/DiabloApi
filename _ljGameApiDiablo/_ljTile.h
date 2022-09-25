@@ -5,6 +5,8 @@
 #include "_ljValueData.h"
 #include "_ljRoom.h"
 
+
+
 class _ljMonster;
 class _ljRandomMap;
 class _ljColTile;
@@ -49,23 +51,6 @@ class _ljTile : public _ljGameActor
 		int mBF;
 	};
 
-	/*class TileRenderer : public _ljGameRenderer
-	{
-	public:
-
-	private:
-
-	};
-
-	class WallRenderer : public _ljGameRenderer
-	{
-
-	};
-
-	class BigFogRenderer : public _ljGameRenderer
-	{
-
-	};*/
 
 private:
 	_ljTile();
@@ -73,10 +58,9 @@ private:
 	_ljTile(_ljRandomMap* map, int x, int y, LEAGUE_ORDER order);
 	~_ljTile();
 
-	// void Init();
-
+private:
 	void Update() override;
-	// void FindNeighbors();
+
 
 	TILE_TYPE TileType() { return mTileType; }
 	
@@ -133,14 +117,11 @@ private:
 	void DebugSetPosition();
 	void DebugSetTypeName();
 
-
-
-	// void Update() override;
-
 	void LastCheck1();
 	void LastCheck2();
 
 	_ljObject* PutBox(int index);
+
 private:
 	// _ljGameRenderer* mTileRenderer;
 	_ljGameRenderer* mWallRenderer;
@@ -170,7 +151,7 @@ private:
 
 	float mMoveSpeed;
 
-	///////////////////// Debug
+	// Debug
 	bool mIsDebug = false;
 	const wchar_t* mAllTileType[WT_MAX];
 

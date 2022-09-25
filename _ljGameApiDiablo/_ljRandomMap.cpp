@@ -3,7 +3,7 @@
 #include <_ljGameRandomNum.h>
 #include "_ljTile.h"
 #include "_ljRoom.h"
-#include "MapTester.h"
+#include "_ljMapTester.h"
 #include "_ljColMap.h"
 #include "_ljColTile.h"
 #include "_ljPlayer.h"

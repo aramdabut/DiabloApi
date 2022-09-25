@@ -16,19 +16,25 @@ static const _ljVector PlayerDiagonal = { 128.f / 4 , 64.f / 4 };
 
 static int seed = 100;
 
+
+
 bool OverCheck(_ljVector pos);
 // int _ljGameRandomNum(int min, int max);
 
-enum class RENDER_ORDER
-//enum RENDER_ORDER
+// enum은 함수 인자로 넣을 수 있지만, 
+// enum class는 ... 
+// enum class RENDER_ORDER
+enum RENDER_ORDER
 {
 	RO_FIRST,
 	RO_SECOND,
 	RO_MAX
 };
 
-enum class CHEST_TYPE
-//enum CHEST_TYPE
+// enum은 함수 인자로 넣을 수 있지만, 
+// enum class는 ... 
+// enum class CHEST_TYPE
+enum CHEST_TYPE
 {
 	CHT_LDOOR,
 	CHT_RDOOR,
@@ -37,13 +43,12 @@ enum class CHEST_TYPE
 	CHT_SMALL,
 	CHT_BIG,
 	CHT_SILVER,
-
 	/*
-	CHT_BODY,
-	CHT_W_RACK,
-	CHT_A_RACK,
-	CHT_BOOKCASE,
-	CHT_POST,
+		CHT_BODY,
+		CHT_W_RACK,
+		CHT_A_RACK,
+		CHT_BOOKCASE,
+		CHT_POST,	
 	*/
 	CHT_MAX
 };
@@ -93,7 +98,6 @@ public:
 	int exp = 0;
 
 };
-
 
 #pragma region class Pos 
 

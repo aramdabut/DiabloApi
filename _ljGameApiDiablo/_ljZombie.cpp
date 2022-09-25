@@ -9,7 +9,7 @@
 #include "_ljPlayer.h"
 #include "_ljTile.h"
 #include "_ljColTile.h"
-//#include <_ljGameSound.h>
+#include <_ljGameSound.h>
 
 
 int _ljZombie::mCount = 0;

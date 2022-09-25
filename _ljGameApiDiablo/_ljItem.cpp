@@ -161,8 +161,7 @@ _ljItem::_ljItem(const _ljItem& other)
 	mInGameBack->SubSize({ 96 , 192 });
 	mInGameBack->Off();
 
-	//////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+	
 
 	mInven = CreateRenderer<_ljGameRenderer>(LO_UI4);
 

@@ -53,10 +53,8 @@ public:
 	TileIndex SetActorIndex(int x, int y, _ljMonster* actor);
 
 	void UnsetUnit(int x, int y);
+
 public:
-
-
-	///////////////////////////////////////////////////////////////////////////////// _ljMapPathFind //////////////////////////////////////////////////////////
 	class PathNode
 	{
 	public:
@@ -128,8 +126,6 @@ private:
 	{
 		TILEDIR_MAX = 8
 	};
-
-
 
 	std::list<PathNode*>::iterator mCurNodeIter;
 	std::list<PathNode*> PathNodePool;

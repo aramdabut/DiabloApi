@@ -28,6 +28,7 @@
 #include "_ljObject.h"
 #include <_ljGameRandomNum.h>
 #include <_ljGameFile.h>
+#include "_ljValueData.h"
 
 
 _ljPlayer::_ljPlayer(_ljColMap* colmap, _ljRandomMap* randomMap)

@@ -21,9 +21,6 @@ _ljInvenBack::~_ljInvenBack()
 }
 
 
-
-
-
 void _ljInvenBack::Render()
 {
 	int x = 0;

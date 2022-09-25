@@ -42,3 +42,6 @@ private:
 	void SetPlayer();
 
 };
+
+// L"Image"
+// L"Sound"

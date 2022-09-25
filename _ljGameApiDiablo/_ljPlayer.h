@@ -36,34 +36,27 @@ class _ljPlayer : public _ljMonster
 	friend class _ljObject;
 	friend class _ljButcher;
 
-
 public:
 	_ljPlayer* Inst() { return this; }
 
 public:
 	_ljPlayer(_ljColMap* colmap, _ljRandomMap* randomMap);
 	virtual ~_ljPlayer();
+
+public:
 	void CopyPlayer(_ljPlayer* player);
-
 	void GetDamage(int damage) override;
-
 	void SetCurPos(int indexX, int indexY);
-
 	void SetCurrentState(PLAYER_STATE state, bool noneDir = false);
 	void Update() override;
 	void DebugRender() override;
-
 	void SetDestination();
-
 	const MONSTER_DIR PlayerDir() const { return mDir; }
 	void PlayerDir(MONSTER_DIR dir) { mDir = dir; }
-
 	bool CheckDir();
 	void CheckDirChange();
 	// void SetDir(_ljColTile* dest);
-
 	void WalkTask();
-
 	void Idle();
 	void Walk();
 	void Attack();
@@ -72,21 +65,14 @@ public:
 	void RedSkill();
 	void BlueSkill();
 	void GetHit();
-
 	void Fire();
 	void StandingAttack(_ljVector pos);
-
-	//////////////////////////////////////// ColliderMap°ú ¿¬µ¿
 	void SetColPosition(int indexX, int indexY);
-
 	bool CheckWalkableTile();
-
 	_ljTile* GetDibTile() const { return mDibTile; }
-
 	int DibTileX() const { return mDibTile->mX; }
 	int DibTileY() const { return mDibTile->mY; }
 	void GetExp(int exp) { mData.exp += exp; }
-
 	TileIndex GetMouseIndex() { return mMouseIndex; }
 	bool IsInvenOpen() { return mIsInvenOpen; }
 	void ResetDir() { mDir = B; }
@@ -159,7 +145,7 @@ private:
 private:
 	_ljGameAniRenderer* mAnimationRenderer;
 	_ljGameAniRenderer* mLevelUpRenderer;
-	////////////////////// UI RENDERER /////////////////////////////////////
+	//////////////////////////////////////////// UI RENDERER 
 	_ljGameRenderer* mUI;
 	_ljGameRenderer* mHP;
 	_ljGameRenderer* mMP;

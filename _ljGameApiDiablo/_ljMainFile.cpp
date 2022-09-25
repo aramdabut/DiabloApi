@@ -39,7 +39,6 @@ void LoadResource()
 	_ljGameDir newDir;
 
 	newDir.MoveParent();
-	newDir.Move(L"bin");
 	newDir.Move(L"Image"); /* ¡Ù */
 
 	std::vector<_ljGameFile> allTex = newDir.DirToAllFile();
@@ -264,7 +263,6 @@ void LoadResource()
 	_ljGameDir soundDir;
 
 	soundDir.MoveParent();
-	soundDir.Move(L"bin");
 	soundDir.Move(L"Sound");
 	soundDir.Move(L"items");
 

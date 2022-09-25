@@ -172,16 +172,15 @@ public:
 
 	void RenderTile();
 
-	////////////////////////////// FINISHING
+	//// FINISHING
 	void SetBRoom();
 	bool HasBRoom() const { return mHasBRoom; }
 	void SetStartRoom();
+
 private:
 	void SetImageIndex();
 	void SetCopyImageIndex();
 	void CopyAll();
-
-
 
 	// static void MakeBack();
 

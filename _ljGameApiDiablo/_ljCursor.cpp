@@ -13,7 +13,6 @@ _ljCursor::_ljCursor()
 	mMouseRenderer->TransColor(255, 255, 255);
 	mMouseRenderer->SetRenderStyle(RS_TRANS);
 	mMouseRenderer->On();
-	// mMouseRenderer->CamOnOff();
 }
 
 _ljCursor::~_ljCursor()
